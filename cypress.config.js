@@ -9,7 +9,7 @@ module.exports = defineConfig({
     fixturesFolder: false,
    
     retries: {
-      runMode: 2,
+      runMode: 1,
       openMode: 0,
     }, 
     defaultCommandTimeout: 6000,

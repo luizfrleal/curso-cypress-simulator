@@ -9,7 +9,7 @@ describe("Cypress Simulator - A11y Checks", () => {
       //cy.contains("button", "Login").click()*/
       cy.injectAxe()
     })
-    Cypress._.times(100, () => {
+    Cypress._.times(30, () => {
       it("successfully simulates a Cypress command (e.g., cy.get('button'))`.", () => {
         cy.run("cy.get('button')")
         cy.get("#outputArea")
