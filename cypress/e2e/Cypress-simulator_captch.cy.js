@@ -2,7 +2,7 @@
 
 
 beforeEach(() => {
-cy.visit("./src/index.html&chancesOfError=0", {
+cy.visit("./src/index.html", {
       
 })
   
