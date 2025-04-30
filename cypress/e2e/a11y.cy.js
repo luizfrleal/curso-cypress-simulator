@@ -9,17 +9,21 @@ describe("Cypress Simulator - A11y Checks", () => {
       //cy.contains("button", "Login").click()*/
       cy.injectAxe()
     })
+    Cypress._.times(100, () => {
+      it("successfully simulates a Cypress command (e.g., cy.get('button'))`.", () => {
+        cy.run("cy.get('button')")
+        cy.get("#outputArea")
+           .should("contain", "Success:")
+           .and("contain", "cy.get('button') // Got element by selector 'button'")
+           .and("be.visible")
+        cy.checkA11y(".success")
+     
+       })
 
+    })
+    
 
-        it("successfully simulates a Cypress command (e.g., cy.get('button'))`.", () => {
-         cy.run("cy.get('button')")
-         cy.get("#outputArea")
-            .should("contain", "Success:")
-            .and("contain", "cy.get('button') // Got element by selector 'button'")
-            .and("be.visible")
-         cy.checkA11y(".success")
-      
-        })
+        
       
         it("shows an error when entering and running an invalid Cypress command (e.g., cy.run())`", () => {
           cy.run("('button')")  
