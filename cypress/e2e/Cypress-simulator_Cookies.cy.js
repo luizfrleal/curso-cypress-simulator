@@ -39,14 +39,5 @@ beforeEach(() => {
     });
 });
   
-    /*it("successfully simulates a Cypress command (e.g., cy.get('button'))`.", () => {
-      /*cy.get("#codeInput").type("cy.get('button')")
-      cy.get("#runButton").click()
-  
-  
-      cy.get("#outputArea")
-        .should("contain", "Success:")
-        .and("contain", "cy.get('button') // Got element by selector 'button'")
-        .and("be.visible")
-  */
+ 
     })
